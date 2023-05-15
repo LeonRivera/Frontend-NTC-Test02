@@ -1,0 +1,27 @@
+
+<div class="flex flex-column max-w-screen mt-5">
+
+    <div class="flex justify-content-center">
+        <p class="text-6xl">Text Splitter</p>
+    </div>
+    <div class="max-w-screen flex justify-content-center">
+        <img src="assets/experience_design.svg" alt="" class="max-w-30rem text-center">
+    </div>
+
+
+        <input type="text" pInputText [(ngModel)]="inputWords" class="max-w-full m-5" placeholder="Ingresa el texto a dividir " />
+    
+
+        <div class="flex justify-content-center">
+            <p-button styleClass="p-button-danger" label="Enviar peticion" icon="pi pi-check" iconPos="right" (onClick)="splitSentence()"></p-button>
+        </div>
+    <div class="flex flex-column ">
+        <div class="flex justify-content-center">
+            <p class="text-4xl">Resultado: </p>
+        </div>
+            <textarea rows="5" cols="30" pInputTextarea autoResize="true" [(ngModel)]="outputWords" class="m-5"></textarea>
+
+    </div>
+
+
+</div>
